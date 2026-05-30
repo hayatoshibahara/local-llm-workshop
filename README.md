@@ -26,6 +26,7 @@
     - OpenAI APIを使用してPythonスクリプトで推論し、日本語性能を確認
     - temperature, top_pなどのパラメータを解説
     - tool useなどのエージェントとしての機能を解説
+    - LLM as a judgeなどのエージェントフローを解説
 1. まとめ
     - 学習した内容をまとめて解説
     - Unslothによるファインチューニング, RAG, Lang Graphによる状態管理などの発展を紹介
