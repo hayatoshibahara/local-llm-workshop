@@ -1,5 +1,7 @@
 # ローカルLLMワークショップ
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hayatoshibahara/local-llm-workshop/blob/main/main.ipynb)
+
 ## 概要
 
 エッジデバイス向けのLLMの性能を検証する初心者向けのワークショップ
@@ -22,11 +24,16 @@
     - 基礎知識: Denseモデル、パラメータ数、量子化による性能低下と必要なメモリ要件
     - 推論エンジン: llama.cpp, Ollama, VLLM, LM Studioなどの紹介と選び方
 1. LLMハンズオン
-    - Google Colabで推論エンジンのインストールとモデルのダウンロード
-    - OpenAI APIを使用してPythonスクリプトで推論し、日本語性能を確認
-    - temperature, top_pなどのパラメータを解説
-    - tool useなどのエージェントとしての機能を解説
-    - LLM as a judgeなどのエージェントフローを解説
+    - Google ColabでOllamaをインストールしてサーバーを起動
+    - Qwen3.5:4Bモデルをダウンロード
+    - Ollama SDKを使用した基本的な推論と日本語性能の確認
+    - システムプロンプトによるモデルの挙動制御
+    - マルチターン会話による文脈の保持
+    - ストリーミングによるリアルタイムな応答表示
+    - 構造化出力（JSON形式）による確実なデータ取得
+    - ツール呼び出し（Tool Use）: Open-Meteo天気APIとの連携
+    - temperature, top_p, frequency_penaltyなどのパラメータ調整
+    - シンプルなエージェントワークフロー（ルーターAgent → スペシャリストAgent → ガードレールAgent）
 1. まとめ
     - 学習した内容をまとめて解説
     - Unslothによるファインチューニング, RAG, Lang Graphによる状態管理などの発展を紹介
